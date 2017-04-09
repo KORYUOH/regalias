@@ -12,10 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from locale import getdefaultlocale
 from argparse import ArgumentParser
+from locale import getdefaultlocale
 
-from .about import __title__, __version__, __description__
+from .about import __description__, __title__, __version__
 from .generate_japanese_alias import generate_japanese_alias
 
 
