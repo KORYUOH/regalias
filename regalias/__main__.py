@@ -23,7 +23,7 @@ def main():
   language_choices = ['ja', 'zh', 'en']
   default_language = getdefaultlocale()[0].split('_')[0]
   if default_language not in language_choices:
-    default_language = 'ja'
+    default_language = 'en'
 
   argparser = ArgumentParser(
       prog=__title__,
