@@ -36,9 +36,7 @@ def main():
   argparser.add_argument('name', nargs='?', help='seed of alias')
   argparser.add_argument(
       '--language',
-      nargs='?',
       default=default_language,
-      const=default_language,
       choices=language_choices,
       help='select the language of alias')
 
