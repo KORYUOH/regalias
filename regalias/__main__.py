@@ -33,12 +33,12 @@ def main():
       '--version',
       action='version',
       version='%(prog)s version {version}'.format(version=__version__))
-  argparser.add_argument('name', nargs='?', help='seed of alias')
   argparser.add_argument(
       '--language',
       default=default_language,
       choices=language_choices,
       help='select the language of alias')
+  argparser.add_argument('name', nargs='?', help='seed of alias')
 
   args = argparser.parse_args()
 
