@@ -16,7 +16,7 @@ from argparse import ArgumentParser
 from locale import getdefaultlocale
 
 from .about import __description__, __title__, __version__
-from .generate_japanese_alias import generate_japanese_alias
+from .generate_alias import generate_alias
 
 
 def main():
@@ -42,7 +42,7 @@ def main():
 
   args = argparser.parse_args()
 
-  alias = generate_japanese_alias(args.language, args.name)
+  alias = generate_alias(args.language, args.name)
   if args.name is not None:
     print(alias, args.name)
   else:

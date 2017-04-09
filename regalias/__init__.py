@@ -14,6 +14,6 @@
 
 from .about import *
 
-from .generate_japanese_alias import generate_japanese_alias
-from .generate_japanese_alias_from_rng import generate_japanese_alias_from_rng
-from .generate_japanese_alias_from_str import generate_japanese_alias_from_str
+from .generate_alias import generate_alias
+from .generate_alias_from_rng import generate_alias_from_rng
+from .generate_alias_from_str import generate_alias_from_str

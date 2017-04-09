@@ -13,7 +13,7 @@
 # limitations under the License.
 
 
-def generate_japanese_alias_from_rng(language, rng):
+def generate_alias_from_rng(language, rng):
   if language == 'ja':
     from ._ndata import ndata_ja as ndata
     aux = ['の', '・オブ・', '・', 'ザ・']

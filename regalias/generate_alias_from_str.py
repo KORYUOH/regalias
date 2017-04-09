@@ -14,17 +14,10 @@
 
 from random import Random
 
-from .generate_japanese_alias_from_rng import generate_japanese_alias_from_rng
-from .generate_japanese_alias_from_str import generate_japanese_alias_from_str
+from .generate_alias_from_rng import generate_alias_from_rng
 
 
-def generate_japanese_alias(language, str_or_rng=None):
-  if str_or_rng is None:
-    rng = Random()
-    return generate_japanese_alias_from_rng(language, rng)
-  elif isinstance(str_or_rng, str):
-    str_ = str_or_rng
-    return generate_japanese_alias_from_str(language, str_)
-  else:  # isinstance(str_or_rng, Random)
-    rng = str_or_rng
-    return generate_japanese_alias_from_rng(language, rng)
+def generate_alias_from_str(language, str):
+  rng = Random(str)
+
+  return generate_alias_from_rng(language, rng)
