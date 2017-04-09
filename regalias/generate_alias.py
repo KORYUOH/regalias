@@ -18,13 +18,13 @@ from .generate_alias_from_rng import generate_alias_from_rng
 from .generate_alias_from_str import generate_alias_from_str
 
 
-def generate_alias(language, str_or_rng=None):
+def generate_alias(str_or_rng=None, *, language):
   if str_or_rng is None:
     rng = Random()
-    return generate_alias_from_rng(language, rng)
+    return generate_alias_from_rng(rng, language=language)
   elif isinstance(str_or_rng, str):
     str_ = str_or_rng
-    return generate_alias_from_str(language, str_)
+    return generate_alias_from_str(str_, language=language)
   else:  # isinstance(str_or_rng, Random)
     rng = str_or_rng
-    return generate_alias_from_rng(language, rng)
+    return generate_alias_from_rng(rng, language=language)

@@ -17,7 +17,7 @@ from random import Random
 from .generate_alias_from_rng import generate_alias_from_rng
 
 
-def generate_alias_from_str(language, str):
+def generate_alias_from_str(str, *, language):
   rng = Random(str)
 
-  return generate_alias_from_rng(language, rng)
+  return generate_alias_from_rng(rng, language=language)

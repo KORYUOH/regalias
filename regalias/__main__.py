@@ -42,7 +42,7 @@ def main():
 
   args = argparser.parse_args()
 
-  alias = generate_alias(args.language, args.name)
+  alias = generate_alias(args.name, language=args.language)
   if args.name is not None:
     print(alias, args.name)
   else:
