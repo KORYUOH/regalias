@@ -40,8 +40,7 @@ def main():
       default=default_language,
       const=default_language,
       choices=language_choices,
-      help='select the language of alias'
-  )
+      help='select the language of alias')
 
   args = argparser.parse_args()
 
