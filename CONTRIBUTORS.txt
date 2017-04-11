@@ -1,0 +1,9 @@
+# This is the official list of people who can contribute
+# (and typically have contributed) code to the Regalias
+# repository.
+
+# The AUTHORS file lists the copyright holders; this file
+# lists people.
+
+Letla Fox <https://github.com/letla> <https://www.letla.net>
+AkrISrn <https://github.com/akrisrn>
